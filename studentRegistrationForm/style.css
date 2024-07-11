@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff; /* White container background */
+    padding: 30px; /* Increased padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Slightly increased shadow */
+    width: 400px;
+}
+
+h2 {
+    margin-bottom: 30px; /* Larger bottom margin */
+    text-align: center;
+    font-size: 24px; /* Larger font size */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px; /* Increased bottom margin */
+    font-size: 14px; /* Smaller font size */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px; /* Increased padding */
+    margin-bottom: 15px; /* Increased bottom margin */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Slightly larger font size */
+}
+
+.radio-group {
+    margin-bottom: 15px; /* Increased bottom margin */
+}
+
+/* Custom radio button style */
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 50%; /* Rounded shape */
+    outline: none;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Checked state of custom radio button */
+input[type="radio"]:checked::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #007bff; /* Blue fill */
+    border-radius: 50%; /* Rounded shape */
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+/* Label styling for radio buttons */
+.radio-group label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px; /* Font size for labels */
+}
+
+button {
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    background-color: #007bff; /* Blue button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Slightly larger font size */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#otpSection {
+    margin-top: 30px; /* Larger top margin */
+    text-align: center;
+}
+
+#otpSection input[type="text"] {
+    width: 180px; /* Slightly wider OTP input */
+    margin-right: 15px; /* Increased right margin */
+    padding: 8px; /* Smaller padding */
+    font-size: 14px; /* Smaller font size */
+}
+
+#otpSection button {
+    padding: 10px; /* Increased padding */
+    font-size: 14px; /* Smaller font size */
+}

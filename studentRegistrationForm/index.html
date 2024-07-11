@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Student Registration Form</h2>
+        <form id="registrationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            
+            
+            <label for="mobile">Mobile No:</label>
+            <input type="tel" id="mobile" name="mobile" required>
+
+            <div class="radio-group">
+                <label for="gender">Gender</label><br>
+                <input type="radio" id="male" name="gender" value="Male" th:field="*{gender}">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female" th:field="*{gender}">
+                <label for="female">Female</label>
+            </div>
+            <br>
+
+            <div class="radio-group">
+                <label for="department">Department</label><br>
+                <input type="radio" id="cse" name="department" value="CSE" th:field="*{department}">
+                <label for="cse">CSE</label>
+                <input type="radio" id="entc" name="department" value="ENTC" th:field="*{department}">
+                <label for="entc">ENTC</label>
+                <input type="radio" id="mech" name="department" value="MECH" th:field="*{department}">
+                <label for="mech">MECH</label>
+            </div>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <button type="button" onclick="sendOTP()">Register</button>
+        </form>
+
+        <div id="otpSection" style="display: none;">
+            <h2>Enter OTP</h2>
+            <input type="text" id="otp" name="otp" required>
+            <button type="button" onclick="verifyOTP()">Verify OTP</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
